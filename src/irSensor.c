@@ -127,7 +127,7 @@ void irSensorAddPreviousBit(void) {
  *        ____________
  *       |            |
  *       |            |
- * ______|	 ~1778	  |___*/
+ * ______|~1778       |___*/
 void irSensorAddToggleBit(void) {
 	if ((timerRead() >= 1500) && (timerRead() <= 2000)) {
 
