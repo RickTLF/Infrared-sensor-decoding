@@ -1,8 +1,8 @@
 /*****************************************************************************/
-/* Name			:	week4.c													 */
-/* Authors		:	Rick Kock & Arther vd Berg								 */
-/* Version		:	1														 */
-/* Description	:	RC-5 decoding program using LPC1343						 */
+/* Name	: week4.c
+/* Authors : Rick Kock & Arther vd Berg
+/* Version : 1
+/* Description : RC-5 decoding program using LPC1343
 /*****************************************************************************/
 
 #ifdef __USE_CMSIS

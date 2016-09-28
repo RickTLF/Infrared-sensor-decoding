@@ -25,5 +25,5 @@ void ledsWrite(unsigned char mask) {
 }
 
 void ledsWriteRGB(unsigned char rgb) {
-	GPIO2DATA &= ((~rgb) << 9) | 0x1FF;
+	GPIO2DATA &= ((~rgb) << 9) | 0x1FE;
 }

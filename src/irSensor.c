@@ -90,10 +90,10 @@ void irSensorAddBit(unsigned char value) {
  * (of the first interrupt) and a toggle bit may also occur.
  *
  * EXAMPLE:
- *  	  ______
- * 		 |		|
- * 	~889 |		|
- * ______|~889	|_
+ *        ______
+ *       |      |
+ *  ~889 |      |
+ * ______|~889  |_
  * */
 void irSensorAddPreviousBit(void) {
 	if ((timerRead() >= 700) && (timerRead() <= 1100)) {
@@ -118,15 +118,15 @@ void irSensorAddPreviousBit(void) {
  * previous bit and a toggle bit is expected.
  *
  * EXAMPLE: toggle bit
- * 	____________
- * |		   	|
- * |		 	|
+ *  ____________
+ * |            |
+ * |            |
  * |   ~1778	|_
  *
  * EXAMPLE: previous bit + toggle bit
- *  	  ____________
- * 		 |			  |
- * 	~889 |			  |
+ *        ____________
+ *       |            |
+ *       |            |
  * ______|	 ~1778	  |___*/
 void irSensorAddToggleBit(void) {
 	if ((timerRead() >= 1500) && (timerRead() <= 2000)) {
